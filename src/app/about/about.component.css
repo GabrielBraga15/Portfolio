@@ -1,0 +1,20 @@
+.about {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .stats div {
+    margin: 0 15px;
+    text-align: center;
+  }
+  
+  .stats h2 {
+    font-size: 24px;
+  }
+  

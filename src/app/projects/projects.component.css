@@ -1,0 +1,38 @@
+/* projects.component.css */
+.projects {
+  text-align: center;
+  padding: 50px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px; /* Limita a largura máxima dos containers dos projetos */
+  box-sizing: border-box;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0; /* Arredonda os cantos superiores da imagem */
+}
+
+.project-info {
+  padding: 10px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .project {
+    max-width: 100%; /* Ajusta a largura dos containers para ocupar 100% da tela em dispositivos menores */
+  }
+}
