@@ -1,6 +1,6 @@
 <!-- projects.component.html -->
 <section class="projects">
-  <h2>Projects</h2>
+  <h2 @fadeIn>Projects</h2>
   <div class="project-container">
     <div class="project" *ngFor="let project of projects">
       <img [src]="project.image" alt="{{ project.name }}" class="project-image"/>

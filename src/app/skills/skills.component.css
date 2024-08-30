@@ -1,0 +1,39 @@
+.skills {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill {
+    width: 120px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1); /* Div transparente */
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .skill p {
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .skill:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.2); /* Aumenta a transparência no hover */
+  }
+  

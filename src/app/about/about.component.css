@@ -1,20 +1,120 @@
+/* Garantir que html e body ocupem toda a largura da tela e remover qualquer padding/margin */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Definido uma fonte padrão */
+}
+
+.container {
+  max-width: 100%;
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
 .about {
-    text-align: center;
-    padding: 50px;
+  text-align: center;
+  padding: 15px; /* Ajustado para melhor ajuste em telas pequenas */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que os elementos quebrem linha em telas menores */
+  margin-top: 20px;
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+}
+
+.stats div {
+  margin: 10px 5px; /* Ajustado para um layout coeso em telas pequenas */
+  text-align: center;
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+}
+
+.stats h2 {
+  font-size: 20px; /* Ajustado para melhor escala em telas pequenas */
+}
+
+h1, p {
+  display: inline-block;
+  animation: fadeInText 2s ease forwards;
+  opacity: 0; /* Inicia invisível */
+  margin: 0 auto; /* Centraliza o bloco de texto */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  .stats {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}
+
+/* Ajustes específicos para telas até 375px */
+@media (max-width: 375px) {
+  .about {
+    padding: 15px; /* Ajustado para melhor ajuste em telas pequenas */
+  }
+
+  h1 {
+    font-size: 22px; /* Ajusta o tamanho da fonte para telas menores */
+    line-height: 1.2; /* Mantém a legibilidade */
+    padding: 8px;
+  }
+
+  p {
+    font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+    line-height: 1.4; /* Mantém a legibilidade */
+    padding-top: 4px;
+    max-width: 320px; /* Limita a largura do parágrafo */
+  }
+
   .stats div {
-    margin: 0 15px;
-    text-align: center;
+    margin: 10px 5px; /* Espaçamento ajustado */
   }
   
-  .stats h2 {
-    font-size: 24px;
+  .photo-container {
+    padding-top: 10px; /* Ajustado para melhor espaçamento */
+    width: 100%; /* Garante que o container ocupe a largura total */
+    overflow-x: auto; /* Permite rolar horizontalmente se necessário */
+    box-sizing: border-box; /* Inclui padding no cálculo da largura */
+  }
+
+  img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem a largura do container */
+    height: auto; /* Mantém a proporção das imagens */
+  }
+}
+
+/* Ajustes adicionais para telas ainda menores, como 320px */
+@media (max-width: 320px) {
+  .about {
+    padding: 10px; /* Ajuste adicional para telas muito pequenas */
+  }
+
+  h1 {
+    font-size: 20px; /* Tamanho da fonte reduzido para telas muito pequenas */
+    line-height: 1.1;
+  }
+
+  p {
+    font-size: 12px; /* Tamanho da fonte reduzido */
+    max-width: 300px; /* Limita a largura do parágrafo ainda mais */
+  }
+
+  .stats div {
+    margin: 8px 3px; /* Ajuste adicional para pequenos espaços */
   }
   
+  .photo-container {
+    padding-top: 5px; /* Ajuste adicional para espaçamento em telas pequenas */
+  }
+}

@@ -1,11 +1,20 @@
 import { Component } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { trigger, style, animate, transition } from '@angular/animations';
 
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+  styleUrl: './contact.component.css',
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('1s ease-out', style({ opacity: 1 }))
+      ]),
+    ]),
+  ]
 })
 export class ContactComponent {
   sendEmail(event: Event) {

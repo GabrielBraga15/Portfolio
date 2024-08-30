@@ -1,8 +1,8 @@
 <section class="contact">
-  <h2>Contact</h2>
-  <form (submit)="sendEmail($event)">
-    <label for="name">Nome:</label>
-    <input type="text" id="name" name="name" required>
+  <h2 @fadeIn>Contact</h2>
+  <form  (submit)="sendEmail($event)">
+    <label @fadeIn for="name">Nome:</label>
+    <input  type="text" id="name" name="name" required>
 
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>

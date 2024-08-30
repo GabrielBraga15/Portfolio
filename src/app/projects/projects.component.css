@@ -36,3 +36,20 @@
     max-width: 100%; /* Ajusta a largura dos containers para ocupar 100% da tela em dispositivos menores */
   }
 }
+
+h2 {
+  display: inline-block;
+  animation: fadeInText 2s ease forwards;
+  opacity: 0; /* Para garantir que o texto inicie invisível */
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
