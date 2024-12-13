@@ -17,6 +17,36 @@ import { trigger, style, animate, transition } from '@angular/animations';
 export class ProjectsComponent {
   projects = [
     {
+      name: 'WEB SITE BARBEARIA',
+      description: 'Desenvolvimento em React de um website profissional para uma barbearia',
+      image: 'assets/images/project5.jpg'  // Altere o caminho da imagem conforme necessário
+    },
+    {
+      name: 'SITE TEMPO-CERTO',
+      description: 'Desenvolvimento realizado em React e TailwindCss',
+      image: 'assets/images/project6.jpg'  // Altere o caminho da imagem conforme necessário
+    },
+    {
+      name: 'SITE MARTINS',
+      description: 'Desenvolvimento em Html, Css e Javascript',
+      image: 'assets/images/project7.jpg'  // Altere o caminho da imagem conforme necessário
+    },
+    {
+      name: 'MARTINS-CALENDAR',
+      description: 'Desenvolvimento em Html, TailwindCss e Javascript',
+      image: 'assets/images/project8.jpg'  // Altere o caminho da imagem conforme necessário
+    },
+    {
+      name: 'FLOW-ECCOMERCE',
+      description: 'Desenvolvimento para processo seletivo foram usados Next.Js e TailwindCss',
+      image: 'assets/images/project9.jpg'  // Altere o caminho da imagem conforme necessário
+    },
+    {
+      name: 'ULTRAGAZ-SIMULATOR',
+      description: 'Desenvolvimento em Next.Js e TailwindCss',
+      image: 'assets/images/project10.jpg'  // Altere o caminho da imagem conforme necessário
+    },
+    {
       name: 'API',
       description: 'API feita para extrair e enviar informações em xml para uma conciliadora bancária',
       image: 'assets/images/project1.jpeg'  // Altere o caminho da imagem conforme necessário
@@ -28,14 +58,9 @@ export class ProjectsComponent {
     },
     {
       name: 'WEB SITE PIZZARIA',
-      description: 'Desenvolvimento de um website profissional e responsivo',
+      description: 'Desenvolvimento de um website profissional em Angular',
       image: 'assets/images/project4.jpg'  // Altere o caminho da imagem conforme necessário
     },
-    {
-      name: 'WEB SITE BARBEARIA',
-      description: 'Desenvolvimento de um website profissional para uma barbearia',
-      image: 'assets/images/project5.jpg'  // Altere o caminho da imagem conforme necessário
-    }
   ];
 
 }

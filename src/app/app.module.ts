@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module'; // Importando o AppRout
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,7 +13,6 @@ import { SkillsComponent } from './skills/skills.component';
     AppComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent,
     HeaderComponent,
     FooterComponent,
     SkillsComponent,

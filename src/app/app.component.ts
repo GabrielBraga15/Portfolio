@@ -6,7 +6,6 @@ import {
   animate,
   query,
   group,
-  animateChild
 } from '@angular/animations';
 
 @Component({

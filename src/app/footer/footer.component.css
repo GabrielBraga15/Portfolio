@@ -19,3 +19,14 @@ footer i {
 footer i:hover {
   color: #007bff; /* Altere para a cor que você preferir */
 }
+
+@media (max-width:425px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+  }
+}

@@ -10,15 +10,21 @@ body {
   font-family: Arial, sans-serif; /* Definido uma fonte padrão */
 }
 
+
 .container {
   max-width: 100%;
   overflow-x: hidden; /* Evita scroll horizontal */
 }
 
+
+@media (max-width: 1440px) {
+
 .about {
   text-align: center;
   padding: 15px; /* Ajustado para melhor ajuste em telas pequenas */
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
+padding-top: 160px;
+}
 }
 
 .stats {
@@ -39,13 +45,28 @@ body {
   font-size: 20px; /* Ajustado para melhor escala em telas pequenas */
 }
 
+h1 {
+  font-size: 60px; /* Ajusta o tamanho da fonte para telas menores */
+  line-height: 1.5; /* Mantém a legibilidade */
+
+}
+
+p {
+  font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+  line-height: 1.5; /* Mantém a legibilidade */
+
+}
+
 h1, p {
   display: inline-block;
   animation: fadeInText 2s ease forwards;
   opacity: 0; /* Inicia invisível */
   margin: 0 auto; /* Centraliza o bloco de texto */
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
+  text-align: center;
 }
+
+
 
 @keyframes fadeInText {
   0% {
@@ -58,8 +79,65 @@ h1, p {
   }
 }
 
+
+
+
+
+
+@media (min-width:1440px){
+.photo-container {
+  margin-top: 50px;
+ max-width: 600px;
+ max-height: 600px;
+}
+h1 {
+  font-size: 30px; /* Ajusta o tamanho da fonte para telas menores */
+  line-height: 1.5; /* Mantém a legibilidade */
+}
+.about {
+  text-align: center;
+  padding: 15px; /* Ajustado para melhor ajuste em telas pequenas */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+padding-top: 100px;
+}
+}
+
+@media (min-width:1024px){
+  .photo-container {
+    margin-top: 50px;
+   max-width: 600px;
+   max-height: 600px;
+  }
+  h1 {
+    font-size: 30px; /* Ajusta o tamanho da fonte para telas menores */
+    line-height: 1.5; /* Mantém a legibilidade */
+  }
+  .about {
+    text-align: center;
+    padding: 15px; /* Ajustado para melhor ajuste em telas pequenas */
+    box-sizing: border-box; /* Inclui padding no cálculo da largura */
+  padding-top: 100px;
+  }
+  }
+
+@media (max-width: 768px) {
+.photo-container {
+  padding: 100px;
+}
+h1 {
+  font-size: 60px; /* Ajusta o tamanho da fonte para telas menores */
+  line-height: 1.5; /* Mantém a legibilidade */
+  padding: 18px;
+}
+p {
+  font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+  line-height: 1.4; /* Mantém a legibilidade */
+  padding-top: 4px;
+}
+}
+
 /* Ajustes específicos para telas até 375px */
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .about {
     padding: 15px; /* Ajustado para melhor ajuste em telas pequenas */
   }
@@ -80,13 +158,15 @@ h1, p {
   .stats div {
     margin: 10px 5px; /* Espaçamento ajustado */
   }
-  
+
   .photo-container {
-    padding-top: 10px; /* Ajustado para melhor espaçamento */
+    padding: 60px; /* Ajustado para melhor espaçamento */
+
     width: 100%; /* Garante que o container ocupe a largura total */
     overflow-x: auto; /* Permite rolar horizontalmente se necessário */
     box-sizing: border-box; /* Inclui padding no cálculo da largura */
   }
+
 
   img {
     max-width: 100%; /* Garante que as imagens não ultrapassem a largura do container */
@@ -112,9 +192,5 @@ h1, p {
 
   .stats div {
     margin: 8px 3px; /* Ajuste adicional para pequenos espaços */
-  }
-  
-  .photo-container {
-    padding-top: 5px; /* Ajuste adicional para espaçamento em telas pequenas */
   }
 }
