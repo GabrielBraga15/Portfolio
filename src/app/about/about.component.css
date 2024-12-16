@@ -98,13 +98,13 @@ h1 {
   text-align: center;
   padding: 15px; /* Ajustado para melhor ajuste em telas pequenas */
   box-sizing: border-box; /* Inclui padding no cálculo da largura */
-padding-top: 100px;
+  margin-bottom: 0px;
 }
 }
 
 @media (min-width:1024px){
   .photo-container {
-    margin-top: 50px;
+    margin-top: 20px;
    max-width: 600px;
    max-height: 600px;
   }
@@ -112,11 +112,15 @@ padding-top: 100px;
     font-size: 30px; /* Ajusta o tamanho da fonte para telas menores */
     line-height: 1.5; /* Mantém a legibilidade */
   }
+.text-container {
+  margin-top: 20px;
+}
+
   .about {
+
     text-align: center;
     padding: 15px; /* Ajustado para melhor ajuste em telas pequenas */
     box-sizing: border-box; /* Inclui padding no cálculo da largura */
-  padding-top: 100px;
   }
   }
 
@@ -142,16 +146,25 @@ p {
     padding: 15px; /* Ajustado para melhor ajuste em telas pequenas */
   }
 
+
   h1 {
     font-size: 22px; /* Ajusta o tamanho da fonte para telas menores */
     line-height: 1.2; /* Mantém a legibilidade */
     padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  strong {
+    line-height: 1.0;
+    padding-bottom: 10px;
+
   }
 
   p {
     font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
-    line-height: 1.4; /* Mantém a legibilidade */
-    padding-top: 4px;
+    line-height: 1.7; /* Mantém a legibilidade */
+    padding-top: 30px;
     max-width: 320px; /* Limita a largura do parágrafo */
   }
 
@@ -182,7 +195,7 @@ p {
 
   h1 {
     font-size: 20px; /* Tamanho da fonte reduzido para telas muito pequenas */
-    line-height: 1.1;
+    line-height: 0.5;
   }
 
   p {
